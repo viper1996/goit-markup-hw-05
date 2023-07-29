@@ -269,6 +269,16 @@ a:active {
     width: calc((100% - 72px) / 4)
 }
 
+.advantages-list-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cloud);
+    border-radius: 4px;
+    margin-bottom: 8px;
+    height: 112px;
+}
+
 .advantages-list-title {
     color: var(--navyblue);
     font-size: 20px;
