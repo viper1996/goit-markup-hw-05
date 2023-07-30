@@ -580,34 +580,82 @@ a:active {
 
 /*  --------- Portfolio main --------- */
 
+.img-list {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 48px;
+    column-gap: 24px;
+}
+  
+.img-list-link {
+    width: calc((100% - 48px) / 3);
+ }
+  
 .img-cover-link {
+    text-decoration: none;
     display: block;
+    flex-direction: column;
+    align-items: start;
+    flex-shrink: 0;
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
+  
 .img-cover-link:hover,
 .img-cover-link:focus {
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 
-    0px 1px 1px rgba(46, 47, 66, 0.16), 
-    0px 2px 1px rgba(46, 47, 66, 0.08);
-} 
-
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+      0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+  
 .img-cover-link:hover .img-cover-text,
 .img-cover-link:focus .img-cover-text {
     transform: translateY(0%);
 }
-
-.img-cover {
+  
+.img-cover-wrap {
+    position: relative;
+    overflow: hidden;
+}
+  
+.img-cover-text {
+    background-color: var(--iris);
+    color: var(--cloud);
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    padding: 40px 32px;
     position: absolute;
     top: 0;
-    width: 360px;
-    height: 300px;
-    flex-shrink: 0;
-    background: var(--iris);
+    width: 100%;
     height: 100%;
     transform: translateY(100%);
-    transition: transform 250ms linear;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+  
+.img-list-container {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    padding: 32px 16px;
+    border: 1px solid var(--cornflower);
+    border-top: none;
+}
+  
+.img-title {
+    color: var(--navyblue);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    margin-bottom: 8px;
+}
+  
+.img-description {
+    color: var(--slate);
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
 
 .link:hover .img-cover {
     transform: translateY(0);
@@ -630,12 +678,6 @@ a:active {
     height: 100%;
     transform: translateY(100%);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.img-list{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 48px 24px;
 }
 
 .img-list-link:hover{
@@ -667,7 +709,7 @@ a:active {
 
 .footer-description{
     width: 264px;
-}
+}*/
    
 /*  --------- Backdrop --------- */
 
