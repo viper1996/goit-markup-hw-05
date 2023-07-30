@@ -600,13 +600,22 @@ a:active {
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
   
-.img-cover-link:hover,
-.img-cover-link:focus {
+.img-cover-link:hover {
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-      0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+      0px 1px 1px rgba(46, 47, 66, 0.16), 
+      0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
+.img-cover-link:focus {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 
+    0px 1px 1px rgba(46, 47, 66, 0.16), 
+    0px 2px 1px rgba(46, 47, 66, 0.08);
 }
   
-.img-cover-link:hover .img-cover-text,
+.img-cover-link:hover .img-cover-text {
+    transform: translateY(0%);
+}
+
 .img-cover-link:focus .img-cover-text {
     transform: translateY(0%);
 }
@@ -629,6 +638,7 @@ a:active {
     height: 100%;
     transform: translateY(100%);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    padding: 40px 32px;
 }
   
 .img-list-container {
@@ -713,12 +723,13 @@ a:active {
    
 /*  --------- Backdrop --------- */
 
-.backdrop{
-    position: fixed;    
+.backdrop {
+    position: fixed;  
+    top: 0;
+    left: 0;  
     width: 100%;
     height: 100%;
     background-color: rgba(46, 47, 66, 0.40);
-    top: 0;
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), 
      visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
