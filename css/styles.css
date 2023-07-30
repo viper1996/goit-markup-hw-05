@@ -503,7 +503,7 @@ a:active {
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    padding-bottom: 16px;
+    margin-bottom: 16px;
 }
 
 
@@ -713,6 +713,8 @@ a:active {
     cursor: pointer;
     border: 250ms cubic-bezier(0.4, 0, 0.2, 1);
     background-color: 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
      border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
