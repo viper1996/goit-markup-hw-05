@@ -350,6 +350,24 @@
                     </li>
                 </ul>
             </div>
+            <div class="footer-email-container">
+                <p class="footer-email-text">Subscribe</p>
+                <form class="footer-form">
+                    <label class="footer-email-label">
+                    <input
+                        class="footer-input"
+                        type="email"
+                        name="footer-email"
+                        placeholder="E-mail"/>
+                    </label>
+                    <button class="footer-button" type="submit">
+                        Subscribe
+                        <svg class="footer-icon" width="24" height="24">
+                        <use href="./images/icons.svg#plane"></use>
+                        </svg>
+                   </button>
+                </form>
+            </div>
         </div>
     </footer>
 
@@ -410,14 +428,30 @@
                 </div>
                 <div class="modal-field">
                     <label id="comment" class="form-label"> Comment </label>
-                        <input 
-                        class="form-input comment" 
-                        type="text" 
-                        placeholder="" 
+                    <textarea 
                         name="comment" 
+                        id="comment"
+                        class="form-user-text"
                         placeholder="Text input"
-                        id="comment">
+                        type="text"
+                    ></textarea>
                 </div>
+                <div class="checkbox">
+                    <input
+                      class="modal-input-checkbox visually-hidden"
+                      type="checkbox"
+                      name="user-privacy"
+                      value="true"
+                      id="user-privacy" >
+                    <label class="accept-policy-label" for="user-privacy">
+                      <span class="accept-checkbox">
+                        <svg class="check-icon" width="10" height="8">
+                          <use href="./images/icons.svg#checklists"></use></svg>
+                        </span>
+                      I accept the terms and conditions of the
+                      <a class="privacy-policy-link" href="index.html">Privacy Policy</a>
+                    </label>
+                  </div>
                 <button class="form-button" type="submit">Send</button>
             </form>
         </div>
