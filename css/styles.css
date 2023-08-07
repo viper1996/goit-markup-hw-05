@@ -958,7 +958,7 @@ a:active {
     fill: var(--iris);
   }
   
-  .modal-field {
+  .modal-field-textarea {
     margin-bottom: 16px;
   }
   
