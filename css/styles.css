@@ -50,13 +50,13 @@ ol {
     margin-bottom: 0;
 }
 
-img{
+img {
     display: block;
 }
 
-.container{
+.container {
     width: 100%;
-    max-width: 1158px;
+    max-width: 428px;
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
@@ -84,7 +84,11 @@ a:active {
     overflow: hidden;
 }
 
-.header{
+
+/*-------- header --------*/
+
+
+.header {
     padding-top: 24px;
     padding-bottom: 24px;
     border-bottom: 1px solid var(--cornflower);
@@ -93,12 +97,12 @@ a:active {
      0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
-.header-navigation{
+.header-navigation {
     display: flex;
     align-items: center;
 }
 
-.header-container{
+.header-container {
     display: flex;
     align-items: center;
 }
@@ -118,7 +122,7 @@ a:active {
     color: var(--navyblue);
 }
 
-.header-list{
+.header-list {
     display: flex;
     gap: 40px;
 }
@@ -137,13 +141,13 @@ a:active {
     color: var(--ocean);
 }
 
-.current{
+.current {
     color: var(--ocean);
     position: relative;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.current::after{
+.current::after {
     content: "";
     position: absolute;
     right: 0;
@@ -181,6 +185,10 @@ a:active {
 .header-address:focus {
     color: var(--ocean);
 }
+
+
+/*-------- title --------*/
+
 
 .title {
     background-color: var(--navyblue);
@@ -232,26 +240,26 @@ a:active {
     background-color: var(--ocean);
 }
 
-.advantages{
-    padding-top: 120px;
-    padding-bottom: 120px;
-    
+
+/*-------- advantages --------*/
+
+
+.advantages {
+    padding-top: 96px;
+    padding-bottom: 96px;
 }
 
-.advantages-list{
+.advantages-list {
     display: flex;
-    gap: 24px;
+    flex-wrap: wrap;
+    gap: 72px;
 }
 
-.advantages-icon{
+.advantages-icon {
     margin: 24px 100px;
 }
 
-.advantages-list-item{
-    width: calc((100% - 72px) / 4)
-}
-
-.advantages-list-container{
+.advantages-list-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -259,25 +267,34 @@ a:active {
     border-radius: 4px;
     margin-bottom: 8px;
     height: 112px;
+    display: none;
 }
 
 .advantages-list-title {
     color: var(--navyblue);
-    font-size: 20px;
-    font-weight: 500;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
     line-height: 1.2;
     letter-spacing: 0.02em;
     margin-bottom: 8px;
+    text-transform: capitalize;
 }
 
 .advantages-list-description {
     font-size: 16px;
     line-height: 1.5;
+    font-weight: 500;
     letter-spacing: 0.02em;
 }
 
-.programs{
+
+/*-------- programs --------*/
+
+
+.programs {
     padding-bottom: 120px;
+    display: none;
 }
 
 .programs-title {
@@ -287,17 +304,21 @@ a:active {
     line-height: 1.11;
     letter-spacing: 0.02em;
     text-transform: capitalize;
-    margin-bottom: 72px
+    margin-bottom: 72px;
 }
 
-.programs-list{
+.programs-list {
     display: flex;
     gap: 24px;
 }
 
+
+/*-------- team --------*/
+
+
 .team {
     background-color: var(--cloud);
-    padding: 120px 0;
+    padding: 96px 0;
 }
 
 .team-title {
@@ -311,9 +332,11 @@ a:active {
     margin-bottom: 72px;
 }
 
-.team-list{
+.team-list {
     display: flex;
-    gap: 24px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 72px;
 }
 
 .team-list-item {
@@ -324,7 +347,7 @@ a:active {
      0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 
-.team-container{
+.team-container {
     padding: 32px 0;
 }
 
@@ -336,7 +359,6 @@ a:active {
     line-height: 1.2;
     letter-spacing: 0.02em;
     margin-bottom: 8px;
-    text-align: center;
 }
 
 .team-list-description {
@@ -347,14 +369,14 @@ a:active {
     text-align: center;
 }
 
-.socisls-list{
+.socisls-list {
     display: flex;
     margin-top: 8px;
     justify-content: center;
     gap: 24px;
 }
 
-.team-social-link{
+.team-social-link {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -366,20 +388,24 @@ a:active {
 }
 
 .team-social-link:hover,
-.team-social-link:focus{
+.team-social-link:focus {
     background-color: var(--ocean);
 }
 
 
-.socials-icon{
+.socials-icon {
     fill: var(--cloud);
 }
 
-.customers{
-    padding: 120px 0;
+
+/*-------- customers --------*/
+
+
+.customers {
+    padding: 96px 0;
 }
 
-.customers-title{
+.customers-title {
     color: var(--navyblue);
     text-align: center;
     font-size: 36px;
@@ -389,16 +415,17 @@ a:active {
     margin-bottom: 72px;
 }
 
-.customers-list{
+.customers-list {
     display: flex;
-    gap: 24px;
+    flex-wrap: wrap;
+    gap: 72px 16px;
 }
 
-.customers-item{
-    width: calc((100% - 5 * 24px) / 6);
+.customers-item {
+    width: calc((100% - 16px) / 2);
 }
 
-.customers-item-link{
+.customers-item-link {
     height: 88px;
     border-radius: 4px;
     border: 1px solid var(--lightslate);
@@ -412,32 +439,36 @@ a:active {
 }
 
 .customers-item-link:hover,
-.customers-item-link:focus{
+.customers-item-link:focus {
     border: 1px solid var(--ocean);
     color: var(--ocean);
 }
 
-.customers-icon{
+.customers-icon {
     fill: var(--lightslate);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .customers-item-link:hover .customers-icon,
-.customers-item-link:focus .customers-icon{
+.customers-item-link:focus .customers-icon {
     fill: currentColor;
 }
+
+
+/*-------- footer --------*/
+
 
 .footer {
     background-color: var(--navyblue);
     padding: 100px 0;
 }
 
-.footer-main-div{
+.footer-main-div {
     display: flex;
     align-items: baseline;
 }
 
-.footer-container{
+.footer-container {
     margin-right: 120px;
 }
 
@@ -467,7 +498,7 @@ a:active {
     margin-bottom: 16px;
 }
 
-.footer-social-media{
+.footer-social-media {
     color: var(--white);
     font-family: Roboto;
     font-size: 16px;
@@ -479,13 +510,13 @@ a:active {
 }
 
 
-.footer-social-list{
+.footer-social-list {
     display: flex;
     justify-content: flex-start;
     gap: 16px;
 }
 
-.footer-social-link{
+.footer-social-link {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -501,7 +532,7 @@ a:active {
     background-color: var(--green);
 }
 
-.footer-social-icon{
+.footer-social-icon {
     fill: var(--cloud);
 }
 
@@ -582,23 +613,19 @@ a:active {
   }
 
 
+  /*-------- portfolio-button --------*/
 
-
-  
 
 .portfolio-button {
-    padding-top: 96px;
-    padding-bottom: 120px;
+    padding-top: 48px;
+    padding-bottom: 48px;
 }
 
 .portfolio-button-list {
     display: flex;
-    justify-content: center;
+    justify-content: left;
     gap: 24px;
-    margin-bottom: 72px;
-
 }
-
 
 .portfolio-button-link {
     font-family: 'Roboto', sans-serif;
@@ -1056,4 +1083,3 @@ a:active {
   .form-button:focus {
     background-color: var(--ocean);
   }
-  
