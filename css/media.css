@@ -5,6 +5,16 @@
         max-width: 768px;
     }
 
+    /*-------- main --------*/
+
+    .main-title{
+        font-size: 56px;
+        line-height: 1.07;
+        max-width: 496px;
+        text-transform: none;
+        margin-bottom: 36px;
+    }
+
     /*-------- advantages --------*/
 
     .advantages-list {
@@ -45,6 +55,16 @@
 
     .container {
         max-width: 1158px;
+    }
+
+    /*-------- main --------*/
+
+    .title{
+        padding: 188px 0;
+    }
+
+    .main-title{
+        margin-bottom: 48px;
     }
 
     /*-------- advantages --------*/

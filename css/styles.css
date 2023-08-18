@@ -192,7 +192,7 @@ a:active {
 
 .title {
     background-color: var(--navyblue);
-    padding: 188px 0;
+    padding: 112px 0;
     max-width: 1440px;
     margin: 0 auto ;
     background-repeat: no-repeat;
@@ -208,13 +208,13 @@ a:active {
 .main-title {
     color: var(--white);
     text-align: center;
-    font-size: 56px;
-    line-height: 1.07;
+    font-size: 36px;
+    line-height: 1.11;
     letter-spacing: 0.02em;
-    margin-bottom: 32px;
-    max-width: 496px;
+    max-width: 320px;
     margin: auto;
-    margin-bottom: 48px    ;
+    margin-bottom: 72px;
+    text-transform: capitalize; 
 }
 
 .button {
@@ -460,16 +460,21 @@ a:active {
 
 .footer {
     background-color: var(--navyblue);
-    padding: 100px 0;
+    padding: 97px 0 104px 0;
 }
 
 .footer-main-div {
     display: flex;
-    align-items: baseline;
+    flex-direction: column;
+    justify-content: center;    
+    align-items: center;
+    gap: 72px;
+    /* align-items: baseline; */
 }
 
 .footer-container {
-    margin-right: 120px;
+    /* margin-right: 120px; */
+    text-align: center;
 }
 
 .footer-logo {
@@ -481,8 +486,8 @@ a:active {
     letter-spacing: 0.03em;
     background-color: var(--navyblue);
     text-transform: uppercase;
-    display: inline-block;
-    margin-bottom: 16px;
+    /* display: inline-block; */
+    
 }
 
 .footer-logo-sp {
@@ -495,7 +500,8 @@ a:active {
     line-height: 1.5;
     letter-spacing: 0.02em;
     background-color: var(--navyblue);
-    margin-bottom: 16px;
+    margin-top: 16px;
+    text-align: left;
 }
 
 .footer-social-media {
@@ -503,10 +509,11 @@ a:active {
     font-family: Roboto;
     font-size: 16px;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 400;
     line-height: 1.5;
     letter-spacing: 0.02em;
     margin-bottom: 16px;
+    text-align: center;
 }
 
 
@@ -537,11 +544,11 @@ a:active {
 }
 
 
+/*-------- footer-email --------*/
 
 
 .footer-email-container {
-    margin-right: auto;
-    margin-left: 80px;
+    /* margin-right: auto; */
 }
 
 .footer-email-text {
@@ -551,26 +558,29 @@ a:active {
     line-height: 1.5;
     letter-spacing: 0.02em;
     margin-bottom: 16px;
+    text-align: center;
 }
   
   .footer-form {
-    display: flex;
+    /* display: flex; */
     gap: 24px;
   }
   
   .footer-input {
     background-color: transparent;
-    width: 264px;
+    width: 398px;
     height: 40px;
     padding: 8px 16px;
     border-radius: 4px;
     border: 1px solid var(--white);
+    opacity: 0.3;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     font-size: 12px;
     line-height: 1.5;
     letter-spacing: 0.04em;
     color: var(--white);
+    margin-bottom: 16px;
   }
   
   .footer-input::placeholder {
